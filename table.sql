@@ -49,6 +49,7 @@ CREATE TABLE `t_bom_item` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `bom_id` int(11) NOT NULL DEFAULT '0' COMMENT 'bom_id; table bom primary key',
   `child_bom_id` int(11) NOT NULL DEFAULT '0' COMMENT 'child bom id required by bom',
+  `child_bom_quantity` int(11) NOT NULL DEFAULT '10' COMMENT 'child bom quantity',
   `created_at` datetime DEFAULT '0000-00-00 00:00:00' COMMENT 'create_at',
   `updated_at` datetime DEFAULT '0000-00-00 00:00:00' COMMENT 'update_at',
   PRIMARY KEY (`id`),

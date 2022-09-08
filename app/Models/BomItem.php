@@ -9,7 +9,7 @@ class BomItem extends Model
     protected $table = 'bom_item';
 
     protected $fillable = [
-        'bom_id', 'child_bom_id',
+        'bom_id', 'child_bom_id', 'child_bom_quantity'
     ];
 
     public function bom()
